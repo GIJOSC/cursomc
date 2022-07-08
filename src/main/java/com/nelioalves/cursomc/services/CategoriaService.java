@@ -18,9 +18,7 @@ public class CategoriaService {
 	public ResponseEntity<Optional<Categoria>> buscar(Integer id) {
 		
 		Optional<Categoria> obj = repo.findById(id);
-		return ResponseEntity.ok().body(obj);
-		
-		
+		return ResponseEntity.ok().body(obj);			
 		
 	}
 
